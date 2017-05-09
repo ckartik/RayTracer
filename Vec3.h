@@ -11,5 +11,6 @@ class Vec3
         Vec3 &normalize();
         T length2();
         T legnth();
+        T dot();
 };
 #endif
