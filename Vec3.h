@@ -12,5 +12,9 @@ class Vec3
         T length2();
         T legnth();
         T dot();
+        friend std::ostream & operator << (std::ostream &os, const Vec3<T> &v) { 
+            os << "[" << v.x << " " << v.y << " " << v.z << "]"; 
+                return os;
+        } 
 };
 #endif
