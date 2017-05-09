@@ -6,7 +6,9 @@ Vec3::Vec3(T xx, T yy , T zz): x(xx), y(yy), z(zz) {}
 Vec3<T> Vec3::operator * (const T &f) const { return Vec3<T> (x * f, y * f, z * f); }
 Vec3<T> Vec3::operator * (const Vec3<T> &v) const { return Vec3<T> (x * v.x, y * v.y, z * v.z); }
 Vec3<T> Vec3::operator - (const Vec3<T> &v) const { return Vec3<T> (x - v.x, y - v.y, z - v.z); }
-vec3<T> Vec3::operator - () const { return Vec3<T> (-x, -y, -z); }
+Vec3<T> Vec3::operator - () const { return Vec3<T> (-x, -y, -z); }
+Vec3<T> &Vec3::operator += (const Vec3<T> &v) const { return Vec3<T> (x += v.x, y += v.y, z += v.z);}
+Vec3<T> &Vec3::operator *= (const Vec3<T> &v) const { return Vec3<T> (x *= v.x, y *= v.y, z *= v.z);}
 
 T Vec3::length2() const {
     return x * x + y * y + z * z;
