@@ -1,4 +1,4 @@
-OBJ = main.o Vec3.o
+OBJ = main.o
 
 RayTracer: $(OBJ)
 	g++ $(OBJ) -o RayTracer

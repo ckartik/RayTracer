@@ -11,7 +11,5 @@
 using namespace std;
 
 int main (){
-
-    cout << "HI";
-
+    Vec3<int> a(5);
 }

@@ -23,7 +23,6 @@ class Vec3
 
 
 
-#include "Vec3.h"
 
 template<typename T>
 Vec3<T>::Vec3(): x(T(0)), y(T(0)), z(T(0)) {}
