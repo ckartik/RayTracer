@@ -11,6 +11,12 @@
 using namespace std;
 
 int main (){
-    Vec3<int> a(5);
+	//Defining dementions of image canvas
+	const int HeightImageCanvas = 680;
+	const int WidthImageCanvas  = 480;
+
+	
+
+    Vec3<float> a(5.0f, 6.0f, 43.5f);
     cout << a;
 }
