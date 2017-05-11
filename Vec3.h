@@ -1,6 +1,8 @@
 #ifndef _VEC3_H_
 #define _VEC3_H_
 
+#include <iostream>
+
 template<typename T>
 class Vec3
 {
@@ -19,6 +21,10 @@ class Vec3
         T length2() const;
         T length() const;
         T dot(const Vec3<T> &v) const;
+        friend std::ostream &operator<< (std::ostream &os,const Vec3<T> &v){
+            os << "[ " << v.x << ", " << v.y << ", " << v.z << " ]";
+            return os;
+        }
 };
 
 
@@ -50,7 +56,6 @@ Vec3<T> &Vec3<T>::operator += (const Vec3<T> &v){ return Vec3<T> (x += v.x, y +=
 
 template<typename T>
 Vec3<T> &Vec3<T>::operator *= (const Vec3<T> &v){ return Vec3<T> (x *= v.x, y *= v.y, z *= v.z);}
-
 
 template<typename T>
 T Vec3<T>::length2() const {

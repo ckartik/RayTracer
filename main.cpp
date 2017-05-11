@@ -12,4 +12,5 @@ using namespace std;
 
 int main (){
     Vec3<int> a(5);
+    cout << a;
 }
