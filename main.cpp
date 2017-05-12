@@ -7,6 +7,7 @@
 #include <cassert> 
 
 #include "Vec3.h"
+#include "Object.h"
 
 using namespace std;
 
